@@ -28,10 +28,10 @@ fn main() {
     match temperature_unit {
         'F' => result = convert_to_fahrenheit(temperature),
         'C' => result = convert_to_celsius(temperature),
-        _ => panic!("Unknown temperature unit: {}", temperature_unit)
+        _ => panic!("Unknown temperature unit: {}", temperature_unit),
     };
 
-    println!("Result: {} {}", result, temperature_unit)
+    println!("Result: {} {}", result, temperature_unit);
 }
 
 fn convert_to_fahrenheit(temperature: i32) -> i32 {
